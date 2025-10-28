@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="転職用ポートフォリオ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css"> 
+        <title>Nagashima Kanae</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <!-- header -->
+    <header id="header">
+        <h1 class="site-title">
+            <a href="./index.html">Home</a>
+        </h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="./index1.5.html#about">About</a></li>
+                <li><a href="./index.html#work">Work</a></li>
+            </ul>
+                        <div class="burger"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html#">Home</a></li>
+                    <li><a href="./index1.5.html">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+<div class="section">
+<span class="sec-title">モンブラン バナー</span>
+<h1 class="sub-title2">仮想</h1>
+<hr>
+</div>
+
+<div class="section"><div class="work-box2">
+<img src="img/モンブラン500×500.jpg" alt="IT転職バナー">
+</div></div>
+
+<div class="section">
+<dl class="index2-setumei">
+    <dt>概要</dt>
+    <dd>カフェの期間限定メニューを告知するバナー
+    </dd>
+    <dt>ターゲット</dt>
+    <dd>10~30代の女性。学生・会社員</dd>
+    <dt>使用フォント</dt>
+    <dd>「HGS明朝B」・・・I高級感のあるスイーツの世界観を表現するため、上品で格調高い印象を持つフォントを使用しました</dd>
+    <dt>情報設計・デザイン</dt>
+    <dd>・若い世代もターゲットであることから、上品さの中に親しみやすさを加えるため、不規則な図形を取り入れ、上品さとカジュアルさのバランスを意識したデザインにしました<br>
+    <br>・背景は中央に向かって明るくなるグラデーションを用い、自然と中央のモンブランに視線が集まるように工夫しました<br><br>
+    ・秋の期間限定メニューであるため、栗をイメージさせる茶色を基調に、実際に栗の写真を取り入れることで、秋らしさや季節感を演出しました<br></dd>
+    <dt>制作日・期間</dt>
+    <dd>2025年10月3日  3.5時間
+    </dd>
+    <dt>使用ツール</dt>
+    <dd>Photoshop
+    </dd>
+</dl>
+</div>
+
+
+<!-- more works -->
+ <div class="section">
+    <ul class=" more-works more-works3 more-works2">
+        <li><a href="index2.html">< Back</a></li>
+        <li><a href="./index.html#work">More Works</a></li>
+        <li><a href="index4.html">Next ></a></li>
+    </ul>
+ </div>
+
+<!-- footer -->
+ <footer class="section">
+    <hr>
+    <div id="footer">
+<ul class="footer-ul">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./index1.5.html#about">About</a></li>
+    <li><a href="./index.html#work">Work</a></li>
+</ul>
+<small>(C) 2025 kanae nagashima</small></div>
+</footer>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+$(".burger").click(function () {
+    $(".burger").toggleClass("is-active");
+     $(".menu").toggleClass("is-active");
+     
+});/*バーガー要素クリックしたらどうなるの挙動、this を jQuery オブジェクトに変換して、要素に clicked というクラスを追加します。*/
+$(".menu a").click(function () {
+  // メニューを閉じる
+  $(".burger").removeClass("is-active");
+  $(".menu").removeClass("is-active");
+
+  // 背景スクロールを再開
+  $("body").css("overflow", "auto")});
+</script>
+
+
+</body>
