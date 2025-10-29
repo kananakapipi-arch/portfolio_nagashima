@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="転職用ポートフォリオ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css"> 
+      <title>Nagashima Kanae</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+        <!-- header -->
+    <header id="header">
+        <h1 class="site-title">
+            <a href="./index.html">Home</a>
+        </h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="./index1.5.html#about">About</a></li>
+                <li><a href="./index.html#work">Work</a></li>
+            </ul>
+                        <div class="burger"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html#">Home</a></li>
+                    <li><a href="./index1.5.html">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+<div class="section">
+<span class="sec-title">IT転職バナー</span>
+<h1 class="sub-title2">仮想</h1>
+<hr>
+</div>
+
+<div class="section">
+    <div class="work-box2 it-banner">
+        <div class="img-wrap">
+<img src="img/IT500.jpg" alt="IT転職バナー">
+<p>Instagram用</p>
+        </div>
+</div>
+
+<div class="work-box2 it-banner">
+            <div class="img-wrap">
+    <img src="img/IT_x.png" alt="IT転職X">
+    <p>X用</p>
+    </div>
+</div>
+<div class="work-box2">
+            <div class="img-wrap">
+    <img src="img/IT_banner.png" alt="IT転職バナー">
+    <p>GDN・YDA用</p>
+    </div>
+</div>
+
+
+</div>
+
+<div class="section">
+<dl class="index2-setumei">
+    <dt>概要</dt>
+    <dd>IT転職支援企業「STEPジョブ」の求人広告バナー
+    </dd>
+    <dt>ターゲット</dt>
+    <dd>20~30代の男性。会社員・転職活動をしている人・フリーター</dd>
+    <dt>使用フォント</dt>
+    <dd>「HGS創英角ｺﾞｼｯｸUB 標準」・・・IT業界は堅く信頼性を重視するイメージがあるため、ゴシック体を使用し、誠実さや安定感を表現しました</dd>
+    <dt>情報設計・デザイン</dt>
+    <dd>・未経験からのスタートをイメージできるよう、「ゼロ」というキーワードを用いて、誰でも挑戦できる印象を与えました<br><br>・全体的に青を基調とした配色にすることで、IT業界にふさわしい誠実さと信頼感を表現しました
+    <br><br>・強調したい部分には青の反対色である黄色を使用したり、下線を引くことで視線を誘導しています<br><br>
+    ・「会員登録して求人を見る」のボタンにはオレンジを採用し、前向きで明るい印象を与えることで、求人登録を促すデザインにしました<br><br>
+    ・「IT・WEBエンジニア求人多数」や「会員登録して求人を見る」の文字に影を加えることで、立体感と存在感を強調しています</dd>
+    <dt>制作日・期間</dt>
+    <dd>2025年10月15日  5時間
+    </dd>
+    <dt>使用ツール</dt>
+    <dd>Photoshop
+    </dd>
+</dl>
+</div>
+
+
+<!-- more works -->
+ <div class="section">
+    <ul class="more-works more-works2">
+        <li><a href="">< Back</a></li>
+        <li><a href="./index.html#work">More Works</a></li>
+        <li><a href="./index3.html">Next ></a></li>
+    </ul>
+ </div>
+
+<!-- footer -->
+ <footer class="section">
+    <hr>
+    <div id="footer">
+<ul class="footer-ul">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./index1.5.html#about">About</a></li>
+    <li><a href="./index.html#work">Work</a></li>
+</ul>
+<small>(C) 2025 kanae nagashima</small></div>
+</footer>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+$(".burger").click(function () {
+    $(".burger").toggleClass("is-active");
+     $(".menu").toggleClass("is-active");
+     
+});/*バーガー要素クリックしたらどうなるの挙動、this を jQuery オブジェクトに変換して、要素に clicked というクラスを追加します。*/
+$(".menu a").click(function () {
+  // メニューを閉じる
+  $(".burger").removeClass("is-active");
+  $(".menu").removeClass("is-active");
+
+  // 背景スクロールを再開
+  $("body").css("overflow", "auto")});
+</script>
+
+
+</body>
